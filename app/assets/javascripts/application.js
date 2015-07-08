@@ -9,15 +9,48 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+//= require_tree .
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap.min
-//= require jquery.easing.min
+//= require bootstrap
 //= require classie
-//= require cbpAnimatedHeader.min
+//= require cbpAnimatedHeader
 //= require jqBootstrapValidation
 //= require contact_me 
-//= require_tree .
+//= require jquery.easing.min
 
+var cbpAnimatedHeader = (function() {
+
+	var docElem = document.documentElement,
+		header = document.querySelector( '.navbar-default' ),
+		didScroll = false,
+		changeHeaderOn = 300;
+
+	function init() {
+		window.addEventListener( 'scroll', function( event ) {
+			if( !didScroll ) {
+				didScroll = true;
+				setTimeout( scrollPage, 250 );
+			}
+		}, false );
+	}
+
+	function scrollPage() {
+		var sy = scrollY();
+		if ( sy >= changeHeaderOn ) {
+			classie.add( header, 'navbar-shrink' );
+		}
+		else {
+			classie.remove( header, 'navbar-shrink' );
+		}
+		didScroll = false;
+	}
+
+	function scrollY() {
+		return window.pageYOffset || docElem.scrollTop;
+	}
+
+	init();
+
+})();
