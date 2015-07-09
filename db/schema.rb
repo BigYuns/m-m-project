@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150707074951) do
+ActiveRecord::Schema.define(version: 20150709083117) do
 
   create_table "dev_people", force: :cascade do |t|
     t.string   "name"
@@ -23,8 +23,11 @@ ActiveRecord::Schema.define(version: 20150707074951) do
   add_index "dev_people", ["magnetic_id"], name: "index_dev_people_on_magnetic_id"
 
   create_table "magnetics", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "attachment"
+    t.string   "name"
+    t.string   "youtube_url"
   end
 
 end

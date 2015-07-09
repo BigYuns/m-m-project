@@ -14,10 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+
 //= require classie
 //= require cbpAnimatedHeader
 //= require jqBootstrapValidation
-//= require contact_me 
 //= require jquery.easing.min
 //= require social-share-button
 //= require_tree .

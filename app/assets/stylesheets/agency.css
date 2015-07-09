@@ -265,7 +265,9 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/4-6_crop.jpg);
+     background-color:  #888888 ;
+
+    background-image: url(../img/backgroundimage.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -294,6 +296,7 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    border-color: #FFFFFF;
 }
 
 @media(min-width:768px) {
@@ -486,14 +489,12 @@ section h3.section-subheading {
     z-index: 100;
     position: absolute;
     left: 0;
-    width: 80px;
+    width: 150px;
     height: 80px;
     margin-left: 0;
     border: 7px solid #f1f1f1;
-    border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
 }
 
 .timeline>li .timeline-image h4 {
@@ -653,8 +654,12 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../img/background2.png);
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

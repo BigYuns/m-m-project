@@ -10,11 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *= require_tree .
- *= require font-awesome.css
+ *= require font-awesome
  *= require bootstrap-glyphicons.css
  *= require bootstrap.min.css
  *= require agency
  *= require social-share-button
+ *= require bootstrap_and_overrides
  *= require_self
 
  */
@@ -30,4 +31,8 @@
 	-webkit-transform-origin: top left;
 	-moz-transform-origin: top left;
 	-webkit-transform-origin: top left;
+}
+
+header .intro-text .intro-heading {
+    outline-color: #FFFFFF ;
 }
