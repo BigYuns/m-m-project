@@ -782,6 +782,10 @@ ul.social-buttons li a:active {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+
+}
+#portfolioModal1{
+    background-image:url(../img/Korak_surfing.png);
 }
 
 .portfolio-modal .modal-content h2 {
@@ -833,6 +837,8 @@ ul.social-buttons li a:active {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+
 
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
