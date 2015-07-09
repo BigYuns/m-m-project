@@ -9,10 +9,25 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
+ *= require_tree .
  *= require font-awesome.css
  *= require bootstrap-glyphicons.css
  *= require bootstrap.min.css
  *= require agency
+ *= require social-share-button
  *= require_self
- *= require_tree .
+
  */
+
+.fb-like{
+	transform: scale(1.5);
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	-o-transform: scale(1.5); 
+	-moz-transform: scale(1.5); 
+	transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+}

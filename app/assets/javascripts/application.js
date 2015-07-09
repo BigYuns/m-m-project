@@ -9,7 +9,7 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require_tree .
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
@@ -19,6 +19,8 @@
 //= require jqBootstrapValidation
 //= require contact_me 
 //= require jquery.easing.min
+//= require social-share-button
+//= require_tree .
 
 var cbpAnimatedHeader = (function() {
 
