@@ -35,6 +35,43 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+
+.rectangle{
+    width:1500px;
+    height:1600px;
+    background:#E0FFFF;
+    border-radius: 25px;
+    position:relative;
+    left: -377px;
+    font-size: 15px;
+    padding:50px;
+}
+
+#rec-1{
+  background:#E0FFFF;
+}
+
+#rec-5{
+  background:#FFFFF0;
+}
+
+#rec-2{
+  background:;
+
+}
+
+#rec-6{
+
+}
+
+
+.portfolioModal1{
+  background-image:url("/assets/Korak_surfing.png"); 
+}
+
+
+
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -5782,6 +5819,44 @@ button.close {
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
+
+#modal-content1{
+  background-image: url("/assets/Korak_surfing.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#modal-content2{
+  background-image: url("/assets/jan1_edited.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#modal-content5{
+  background-image:url("/assets/Chris2_edited3.png"); 
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#modal-content6{
+  background-image:url("/assets/david1_edited5.png"); 
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -5812,8 +5887,8 @@ button.close {
   line-height: 1.42857143;
 }
 .modal-body {
-  position: relative;
-  padding: 15px;
+  position:relative;
+  padding: 100px;
 }
 .modal-footer {
   padding: 15px;
