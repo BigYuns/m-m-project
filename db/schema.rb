@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150709083117) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "dev_people", force: :cascade do |t|
     t.string   "name"
     t.integer  "magnetic_id"
@@ -20,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150709083117) do
     t.datetime "updated_at",  null: false
   end
 
-  add_index "dev_people", ["magnetic_id"], name: "index_dev_people_on_magnetic_id"
+  add_index "dev_people", ["magnetic_id"], name: "index_dev_people_on_magnetic_id", using: :btree
 
   create_table "magnetics", force: :cascade do |t|
     t.datetime "created_at",  null: false
@@ -30,4 +33,5 @@ ActiveRecord::Schema.define(version: 20150709083117) do
     t.string   "youtube_url"
   end
 
+  add_foreign_key "dev_people", "magnetics"
 end
